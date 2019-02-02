@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>loading...</title>
+	<style type="text/css">
+		html, body, .cover{
+			height: 100%;
+			width: 100%;
+			padding: 0;  
+    		margin: 0;  
+    		overflow:hidden;
+    		text-align: center;
+		}
+		html, body{
+			background: #FFF;
+		}
+		.cover{
+			background: #2c3e50;
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 1;
+		}
+		.cover, .con{
+			position: fixed;
+		}
+		.con{
+			z-index: 3;
+			top: 0; left: 0; bottom: 0; right: 0;
+			margin: auto;
+  			
+			width: 80px;
+			height: 80px;
+		}
+		
+		.spinner {
+		  width: 80px;
+		  height: 80px;
+		  
+		  background-color: #FFF;
+		  border-radius: 100%;  
+		  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+		  animation: sk-scaleout 1.0s infinite ease-in-out;
+		}
+
+		@-webkit-keyframes sk-scaleout {
+		  0% { -webkit-transform: scale(0) }
+		  100% {
+		    -webkit-transform: scale(1.0);
+		    opacity: 0;
+		  }
+		}
+
+		@keyframes sk-scaleout {
+		  0% { 
+		    -webkit-transform: scale(0);
+		    transform: scale(0);
+		  } 100% {
+		    -webkit-transform: scale(1.0);
+		    transform: scale(1.0);
+		    opacity: 0;
+		  }
+		}
+	</style>
+</head>
+<body>
+	<div class="cover">
+		<div class="con">
+			<div class="spinner"></div>
+		</div>
+	</div>
+	别等了，这个页面永远也加载不出来
+	<br>
+	Don't wait! This page would not finish loading within ONE million years.
+</body>
+</html>
